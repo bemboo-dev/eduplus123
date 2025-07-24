@@ -134,8 +134,8 @@ p.nominalBounds = new cjs.Rectangle(-96,-107,239,235);
 
 
 // stage content:
-(lib.개발자버튼추가_HTML5Canvas = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
+(lib.개발자버튼추가_HTML5Canvas1 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = false; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
@@ -151,6 +151,10 @@ if (reversed == null) { reversed = false; }
 		this.stop(); // 현재 프레임 일시정지
 		
 		this.nextbtn4.visible = true; // 버튼 보이기 (선택 사항)
+		
+		this.nextbtn4.addEventListener("click", () = > {
+			window.location.href = "scene1.html"; // 다른 페이지로 이동
+		});
 	}
 
 	// actions tween:
@@ -159,12 +163,12 @@ if (reversed == null) { reversed = false; }
 	// 레이어_2
 	this.develop = new lib.심볼4();
 	this.develop.name = "develop";
-	this.develop.setTransform(49.5,325.2,0.4995,0.4969,0,0,0,27.4,27.4);
+	this.develop.setTransform(78.2,653.5,0.8025,0.9116,0,0,0,27.1,27.1);
 	new cjs.ButtonHelper(this.develop, 0, 1, 1);
 
 	this.nextbtn4 = new lib.buttonfirst();
 	this.nextbtn4.name = "nextbtn4";
-	this.nextbtn4.setTransform(301.35,173.65,0.4995,0.4969,0,0,0,0.4,0.7);
+	this.nextbtn4.setTransform(482.8,375.4,0.8025,0.9116,0,0,0,0.1,0.1);
 	new cjs.ButtonHelper(this.nextbtn4, 0, 1, 2, false, new lib.buttonfirst(), 3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.nextbtn4},{t:this.develop}]},1).wait(1));
@@ -176,7 +180,7 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.develop_1, 0, 1, 1);
 
 	this.instance = new lib.심볼1("synched",0);
-	this.instance.setTransform(320.3,180,0.4995,0.497,0,0,0,638.8,362.2);
+	this.instance.setTransform(513.3,387.2,0.8025,0.9116,0,0,0,638.4,362.2);
 	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
 	this.instance.filters = [instanceFilter_1];
 	this.instance.cache(-2,-2,1281,728);
@@ -190,12 +194,12 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(321.3,180,317.49999999999994,500.20000000000005);
+p.nominalBounds = new cjs.Rectangle(513,441,512.4000000000001,276.4);
 // library properties:
 lib.properties = {
 	id: 'D713CE13B9E69E428EE0F5444DA284AB',
-	width: 1280,
-	height: 760,
+	width: 1024,
+	height: 768,
 	fps: 30,
 	color: "#FFFFFF",
 	opacity: 1.00,
