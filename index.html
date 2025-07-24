@@ -61,35 +61,32 @@ function handleComplete(evt,comp) {
 function playSound(id, loop, offset) {
 	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}
 </script>
-<!-- write your code here -->
+<style>
+      html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+
+    #animation_container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    canvas {
+      display: block;
+      background-color: #ffffff;
+    }
+  </style>
 </head>
-<body onload="init();" style="margin:0px;">
-	<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-  }
-
-  #animation_container {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-</style>
-
-<div id="animation_container">
-  <canvas id="canvas"></canvas>
-</div>
-
-	</div>
+<body onload="init();">
+  <div id="animation_container">
+    <canvas id="canvas"></canvas>
+    <div id="dom_overlay_container"></div>
+  </div>
 </body>
 </html>
