@@ -152,8 +152,8 @@ if (reversed == null) { reversed = false; }
 		
 		this.nextbtn4.visible = true; // 버튼 보이기 (선택 사항)
 		
-		this.nextbtn4.addEventListener("click", () = > {
-			window.location.href = "scene1.html"; // 다른 페이지로 이동
+		this.nextbtn4.addEventListener("click", function() {
+			window.location.href = "scene1.html"; // 현재 도메인 내로 이동
 		});
 	}
 
