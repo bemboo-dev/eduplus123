@@ -107,10 +107,6 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("ClickSound");
-	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
@@ -208,7 +204,6 @@ lib.properties = {
 		{src:"images/over.png", id:"over"},
 		{src:"images/화면캡처20250630175951.jpg", id:"화면캡처20250630175951"},
 		{src:"images/up.png", id:"up"},
-		{src:"sounds/ClickSound.mp3", id:"ClickSound"}
 	],
 	preloads: []
 };
